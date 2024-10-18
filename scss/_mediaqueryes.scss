@@ -1,0 +1,79 @@
+@use 'variables';
+
+@media (min-width: $phone) {
+    header{
+        text-align: left;
+        padding: 10px;
+        background-color: $header-color;
+        nav{
+            padding-top: 10px;
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: left;
+                column-gap: 1em;
+                li{
+                    list-style: none;
+                }
+            }
+        }
+    }
+    #top{
+        h1{
+            text-align: left;
+            font-size:3em;
+        }
+        section{
+            text-align: left;
+            h2{
+                font-size: 1.5em;
+            }
+            .gallery{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: 1fr;
+                row-gap: 0;
+            }
+            img{
+                width: 100%;
+            }
+        }
+        .fruit-hover{
+            text-align: left;
+            p{
+                font-size: 1.5em;
+                text-align: left;
+            }
+            figure{
+                img{
+                    width: 60%;
+                }
+                figcaption{
+                    position: absolute;
+                    top: 90px;
+                    left: 0px;
+                    color: $color-text;
+                    font-size: 20px;
+                    width: 300px;
+                }
+                
+            }
+        }
+        //button to top
+        .back-to-top-btn{
+            bottom: 0px;
+            right: 0px;
+            padding:10px;
+            a{
+                color: $button-color;
+                font-size: 20px;
+            }
+        }
+    }
+
+    footer{
+        p{           
+            text-align: left;
+        }
+    }
+}

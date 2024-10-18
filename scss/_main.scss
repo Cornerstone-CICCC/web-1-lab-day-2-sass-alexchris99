@@ -1,0 +1,76 @@
+@use 'variables';
+
+//title
+#top{
+    h1{
+        text-align: center;
+        font-size: 2em;
+        padding: 15px 5px 0 5px;
+    }
+}
+
+//general sections
+section{
+    text-align: center;
+    position: relative;
+    h2{
+        font-size: 1.5em;
+        background-color: $titles-color;
+        margin:20px 0;
+        position:sticky;
+        top: 0;
+    }
+    p{
+        margin: 10px 5px;
+        text-align: justify;
+    }
+    img{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        row-gap: 5px;
+    }
+}
+
+//img hover
+.fruit-hover{
+    text-align: center;
+    p{
+        text-align: center;
+    }
+    figure{
+        img{
+            width: 60%;
+        }
+        img:hover ~ figcaption{
+            background-color: $hover-text;
+        }
+        figcaption{
+            position: absolute;
+            top: 80px;
+            right: 10em;
+            color: $color-text;
+            font-size: 15px;
+        }
+        
+    }
+}
+
+//button to top
+.back-to-top-btn{
+    position: fixed;
+    background-color: $button-background-color;
+    bottom: 10px;
+    right: 4px;
+    padding: 4px;
+    a{
+        font-size: .8em;
+        color: $button-color;
+    }
+}
+
+
